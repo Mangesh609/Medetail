@@ -1,8 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:medetail/screens/home_screen.dart';
 import 'package:medetail/screens/login_screen.dart';
 import 'package:medetail/screens/mobile_login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:medetail/screens/profile_screen.dart';
 import 'package:medetail/screens/register_screen.dart';
 import 'package:http/http.dart'as http;
 import 'dart:async';
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
         title: "Medetails",
       initialRoute: '/',
    routes: {
-     '/':(context)=> RegisterScreen(),
+     '/':(context)=> HomeScreen(username: "Mangesh"),
 
    },
     );
